@@ -1,4 +1,9 @@
 <?php
+
+namespace DAO;
+
+use Model\StaffMember; 
+
 class StaffMemberDAO {
     private \PDO $connexion;
 
@@ -21,6 +26,7 @@ class StaffMemberDAO {
 
     public function getAll(): array {
         $stmt = $this->connexion->query("SELECT * FROM staff_member");
+
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
 }

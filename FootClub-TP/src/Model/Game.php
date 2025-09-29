@@ -1,15 +1,17 @@
 <?php
 
+namespace Model;
+
 Class Game {
     private ?int $id;
     private int $teamScore;
     private int $opponentScore;
-    private DateTime $date;
+    private \DateTime $date;
     private string $city;
     private Team $team;
     private Opposingclub $opposingClub;
 
-    public function __construct(?int $id, DateTime $date, string $city,int $teamScore, int $opponentScore, Team $team, OpposingClub $opposingClub)
+    public function __construct(?int $id, \DateTime $date, string $city,int $teamScore, int $opponentScore, Team $team, OpposingClub $opposingClub)
     {
         $this->id = $id;
         $this->teamScore = $teamScore;
@@ -41,7 +43,7 @@ Class Game {
         return $this->opponentScore;
     }
 
-    public function getDate(): DateTime 
+    public function getDate(): \DateTime 
     {
         return $this->date;
     }

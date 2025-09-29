@@ -1,4 +1,9 @@
 <?php
+
+namespace DAO;
+
+use Model\Team; 
+
 class TeamDAO {
     private \PDO $connexion;
 

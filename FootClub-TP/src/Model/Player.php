@@ -1,16 +1,18 @@
 <?php
 
+namespace Model;
+
 Class Player {
     private ?int $id;
     private string $firstname;
     private string $lastname;
-    private DateTime $birthdate;
+    private \DateTime $birthdate;
     private string $picture;
     
     // Un joueur peut appartenir à une ou plusieurs équipes
     private array $teams = []; 
 
-    public function __construct(?int $id, string $firstname, string $lastname, DateTime $birthdate, string $picture) 
+    public function __construct(?int $id, string $firstname, string $lastname, \DateTime $birthdate, string $picture) 
     {
         $this->id = $id;
         $this->firstname = $firstname;
@@ -35,7 +37,7 @@ Class Player {
         return $this->lastname;
     }
 
-    public function getBirthdate(): DateTime 
+    public function getBirthdate(): \DateTime 
     {
         return $this->birthdate;
     }
