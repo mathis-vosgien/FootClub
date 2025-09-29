@@ -19,7 +19,7 @@ class PlayerDAO {
         ]);
     }
 
-    public function findAll(): array {
+    public function getAll(): array {
         $stmt = $this->connexion->query("SELECT * FROM player");
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }

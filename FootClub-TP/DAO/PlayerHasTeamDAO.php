@@ -18,7 +18,7 @@ class PlayerHasTeamDAO {
         ]);
     }
 
-    public function findAll(): array {
+    public function getAll(): array {
         $stmt = $this->connexion->query("SELECT * FROM player_has_team");
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }

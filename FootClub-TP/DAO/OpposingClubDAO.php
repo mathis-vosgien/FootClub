@@ -16,7 +16,7 @@ class OpposingClubDAO {
         ]);
     }
 
-    public function findAll(): array {
+    public function getAll(): array {
         $stmt = $this->connexion->query("SELECT * FROM opposing_club");
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
