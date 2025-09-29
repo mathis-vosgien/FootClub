@@ -1,4 +1,9 @@
 <?php
+
+namespace DAO;
+
+use Model\OpposingClub; 
+
 class OpposingClubDAO {
     private \PDO $connexion;
 

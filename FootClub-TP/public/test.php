@@ -1,19 +1,25 @@
-<?php
-include 'classes/Game.php';
-include 'classes/OpposingClub.php';
-include 'classes/Player.php';
-include 'classes/PlayerHasTeam.php';
-include 'classes/StaffMember.php';
-include 'classes/Team.php';
+<?php 
 
-include 'includes/db.php';
+/*
+require_once __DIR__ . '/../Autoloader.php';
+Autoloader::register();
 
-include 'DAO/GameDAO.php';
-include 'DAO/PlayerDAO.php';
-include 'DAO/PlayerHasTeamDAO.php';
-include 'DAO/StaffMemberDAO.php';
-include 'DAO/OpposingClubDAO.php';
-include 'DAO/TeamDAO.php';
+// Connexion
+require_once __DIR__ . '/../src/Model/db.php';
+
+use Model\Team;
+use Model\Game;
+use Model\OpposingClub;
+use Model\Player;
+use Model\StaffMember;
+use Model\PlayerHasTeam;
+
+use DAO\GameDAO;
+use DAO\TeamDAO;
+use DAO\OpposingClubDAO;
+use DAO\PlayerDAO;
+use DAO\PlayerHasTeamDAO;
+use DAO\StaffMemberDAO;
 
 $teamDAO = new TeamDAO($connexion);
 $opponentDAO = new OpposingClubDAO($connexion);
@@ -102,6 +108,6 @@ foreach ($staffMembers as $staff) {
     $staff->setId($connexion->lastInsertId());
 }
 
-
+*/
 
 ?>

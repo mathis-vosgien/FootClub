@@ -1,5 +1,7 @@
 <?php 
 
+namespace Model;
+
 Class PlayerHasTeam {
     private Player $player;
     private Team $team;

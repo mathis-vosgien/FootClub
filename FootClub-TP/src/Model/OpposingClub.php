@@ -1,5 +1,7 @@
 <?php
 
+namespace Model;
+
 Class OpposingClub {
     private ?int $id;
     private string $address;

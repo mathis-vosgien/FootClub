@@ -1,5 +1,7 @@
 <?php
 
+namespace Model;
+
 Class Team {
     private ?int $id;
     private string $name;

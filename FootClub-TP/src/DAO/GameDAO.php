@@ -1,5 +1,9 @@
 <?php
 
+namespace DAO;
+
+use Model\Game; 
+
 class GameDAO {
     private \PDO $connexion;
 

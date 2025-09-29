@@ -1,5 +1,7 @@
 <?php
 
+namespace Model;
+
 Class StaffMember {
     private ?int $id;
     private string $firstname;
