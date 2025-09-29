@@ -13,7 +13,7 @@ class TeamDAO {
         $stmt->execute([":name" => $team->getName()]);
     }
 
-    public function findAll(): array {
+    public function getAll(): array {
         $stmt = $this->connexion->query("SELECT * FROM team");
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }

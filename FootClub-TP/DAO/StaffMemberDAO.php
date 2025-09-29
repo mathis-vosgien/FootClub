@@ -19,7 +19,7 @@ class StaffMemberDAO {
         ]);
     }
 
-    public function findAll(): array {
+    public function getAll(): array {
         $stmt = $this->connexion->query("SELECT * FROM staff_member");
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
